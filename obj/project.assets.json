@@ -186,11 +186,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Code\\PacktLibrary\\PacktLibrary.csproj",
+      "projectUniqueName": "C:\\Users\\bleonard\\source\\repos\\PacktLibrary\\PacktLibrary.csproj",
       "projectName": "PacktLibrary",
-      "projectPath": "C:\\Code\\PacktLibrary\\PacktLibrary.csproj",
+      "projectPath": "C:\\Users\\bleonard\\source\\repos\\PacktLibrary\\PacktLibrary.csproj",
       "packagesPath": "C:\\Users\\bleonard\\.nuget\\packages\\",
-      "outputPath": "C:\\Code\\PacktLibrary\\obj\\",
+      "outputPath": "C:\\Users\\bleonard\\source\\repos\\PacktLibrary\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
