@@ -7,16 +7,56 @@ namespace Packt.CS7
 {
     public partial class Person
     {
+        //fields
+        public string Name;
+        public DateTime DateOfBirth;
+        public List<Person> Children = new List<Person>();
+
+        //methods
+        public void WriteToConsole()
+        {
+            WriteLine($"{Name} was born on {DateOfBirth:dddd, d MMMM yyyy}");
+        }
+
+        //methods to 'multiply'
+        public static Person Procreate(Person p1, Person p2)
+        {
+            var baby = new Person
+            {
+                Name = $"Baby of {p1.Name} and {p2.Name}"
+            };
+
+            p1.Children.Add(baby);
+            p2.Children.Add(baby);
+
+            return baby;
+        }
+
+        public Person ProcreateWith(Person partner)
+        {
+            return Procreate(this, partner);
+        }
+    }
+
+
+    // Stuff prior to Chapter 6
+    public partial class OldPerson
+    {
+
+
+
+        //Prior to Chapter 6
+
         public string Name;
         public string FavHobby;
         public DateTime DOB;
         public WondersOfTheAncientWorld FavouriteAncientWonder;
-        public List<Person> Children = new List<Person>();
+        public List<OldPerson> Children = new List<OldPerson>();
         public const string Species = "Homo Sapien";
         public readonly string HomePlanet = "Earth";
 
         public readonly DateTime Instantiated; // constructors 
-        public Person()
+        public OldPerson()
         {
             // set default values for fields 
             // including read-only fields 
@@ -25,7 +65,7 @@ namespace Packt.CS7
         }
 
 
-        public Person(string initialName)
+        public OldPerson(string initialName)
         {
             Name = initialName;
             Instantiated = DateTime.Now;

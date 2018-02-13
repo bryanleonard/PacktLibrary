@@ -7,6 +7,14 @@ namespace Packt.CS7
     public partial class Person
     {
 
+    }
+
+
+    public partial class OldPerson
+    {
+
+        //Prior to Chapter 6
+
         public string Origin
         {
             get
@@ -39,6 +47,19 @@ namespace Packt.CS7
                     default:
                         throw new System.ArgumentException($"{value} is not a primary color. Choose from: red, green, blue.");
                 }
+            }
+        }
+
+        // indexers - not that you'd really use this kind of thing
+        public Person this[int index]
+        {
+            get
+            {
+                return Children[index];
+            }
+            set
+            {
+                Children[index] = value;
             }
         }
     }

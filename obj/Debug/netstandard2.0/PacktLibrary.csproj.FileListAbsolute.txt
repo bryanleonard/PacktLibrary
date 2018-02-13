@@ -7,3 +7,12 @@ C:\Code\PacktLibrary\obj\Debug\netstandard2.0\PacktLibrary.AssemblyInfoInputs.ca
 C:\Code\PacktLibrary\obj\Debug\netstandard2.0\PacktLibrary.AssemblyInfo.cs
 C:\Code\PacktLibrary\obj\Debug\netstandard2.0\PacktLibrary.dll
 C:\Code\PacktLibrary\obj\Debug\netstandard2.0\PacktLibrary.pdb
+C:\Users\bleonard\source\repos\PacktLibrary\bin\Debug\netstandard2.0\PacktLibrary.deps.json
+C:\Users\bleonard\source\repos\PacktLibrary\bin\Debug\netstandard2.0\PacktLibrary.dll
+C:\Users\bleonard\source\repos\PacktLibrary\bin\Debug\netstandard2.0\PacktLibrary.pdb
+C:\Users\bleonard\source\repos\PacktLibrary\obj\Debug\netstandard2.0\PacktLibrary.csprojResolveAssemblyReference.cache
+C:\Users\bleonard\source\repos\PacktLibrary\obj\Debug\netstandard2.0\PacktLibrary.csproj.CoreCompileInputs.cache
+C:\Users\bleonard\source\repos\PacktLibrary\obj\Debug\netstandard2.0\PacktLibrary.AssemblyInfoInputs.cache
+C:\Users\bleonard\source\repos\PacktLibrary\obj\Debug\netstandard2.0\PacktLibrary.AssemblyInfo.cs
+C:\Users\bleonard\source\repos\PacktLibrary\obj\Debug\netstandard2.0\PacktLibrary.dll
+C:\Users\bleonard\source\repos\PacktLibrary\obj\Debug\netstandard2.0\PacktLibrary.pdb
