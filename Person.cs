@@ -5,7 +5,7 @@ using static System.Console;
 
 namespace Packt.CS7
 {
-    public partial class Person
+    public partial class Person : IComparable<Person>
     {
         //fields
         public string Name;
@@ -35,6 +35,60 @@ namespace Packt.CS7
         public Person ProcreateWith(Person partner)
         {
             return Procreate(this, partner);
+        }
+
+        //operator to 'multiply'
+        public static Person operator *(Person p1, Person p2)
+        {
+            return Person.Procreate(p1, p2);
+        }
+
+        //method with a local function
+        public static int Factorial(int number){
+            if (number < 0)
+            {
+                throw new ArgumentException($"{nameof(number)} can\'t be less than zero.");
+            }
+            return localFactorial(number);
+
+            int localFactorial(int localNumber)
+            {
+                if (localNumber < 1)
+                {
+                    return 1;
+                }
+                return localNumber * localFactorial(localNumber - 1);
+            }
+        }
+
+        // delegate stuff
+        //event 
+        public event EventHandler Shout;
+
+        //field 
+        public int AngerLevel;
+
+        //method
+        public void Poke()
+        {
+            AngerLevel++;
+
+            if (AngerLevel >= 3)
+            {
+                //if something is listening
+                Shout?.Invoke(this, EventArgs.Empty);
+                // Same as
+                //if (Shout != null)
+                //{
+                //    // then raise the event
+                //    Shout(this, EventArgs.Empty);
+                //}
+            }
+        }
+
+        public int CompareTo(Person other)
+        {
+            return Name.CompareTo(other.Name);
         }
     }
 
